@@ -4,19 +4,23 @@
 
 <?php print_heading("Cosmetic Jaw Surgeries", "Cosmetic Treatment", "cosmeticTreatments.php"); ?>
 
-<div class="mx-2 mx-md-5 px-0 px-md-5">
+<div class="mx-2 mx-md-5">
     <div class="row pt-2 pt-md-5">
         <?php side_bar_active(6) ?>
         <div class="col-lg-8 mx-3 mx-md-0">
             <div id="Cosmetic_Jaw_Surgeries" class="services_contents">
                 <div class="mb-5">
                     <h2 class="heading mb-1 h1">Cosmetic Jaw Surgeries</h2>
-                    <p class="content border-top pt-3">Primarily addressing functional issues like disproportionate jaw
+                    <p class="subline mb-2 mt-3">Cosmetic Jaw Surgeries is for luxary</p>
+                    <p class="titles-content border-top pt-3">Primarily addressing functional issues like disproportionate jaw
                         growth and bite disharmony, corrective jaw surgery is typically performed by oral and
                         maxillofacial surgeons. In some cases, plastic or cosmetic surgeons may assist in these
                         procedures, aiming to restore proper jaw function and alignment.</p>
-                    <p class="subline mt-3 mb-1">WHEN IS COSMETIC SURGERY NEEDED?</p>
-                    <ul>
+                        <div class="service_image mt-3">
+                    <img src="images/home/jaw_surgery.jpg" class="object-cover" alt="">
+                </div>
+                    <p class="mt-4 font-weight-bold h4">WHEN IS COSMETIC SURGERY NEEDED?</p>
+                    <ul class="list_points_ul">
                         <li>Difficulty in chewing food</li>
                         <li>Protruding or recessed jaw (upper/lower)</li>
                         <li>Snoring and sleep apnea</li>
@@ -33,12 +37,4 @@
         </div>
     </div>
 </div>
-
-<script>
-    let valuee = window.location.href.split("/");
-    console.log(valuee[4].replace(".php", ""));
-</script>
-
-
-
 <?php include 'Includes/footer.php' ?>

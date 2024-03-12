@@ -21,7 +21,7 @@ $('.treatments_slider').slick({
     slidesToShow: 2,
     speed: 1000,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1000,
     responsive: [
         {
@@ -32,9 +32,9 @@ $('.treatments_slider').slick({
         }
     ]
 });
-$('.open_side_drop').on('click',function(event){
+$('.open_side_drop').on('click', function (event) {
     console.log(event.target.dataset.target_element);
-    $('.'+ event.target.dataset.target_element).toggleClass('drop-down_open')
+    $('.' + event.target.dataset.target_element).toggleClass('drop-down_open')
 });
 $('.side_bar_toggler').on('click', function () {
     // $('body,html').toggleClass('overflow-hidden');
@@ -54,14 +54,14 @@ $('.show_appointment,.appointment_container').on('click', function (event) {
 });
 let submit_contact = true;
 $('.contact_submit').on('click', function () {
-    if(submit_contact){
+    if (submit_contact) {
         submit_contact = false;
         $('.form-control').val('');
         $('.notification_bar').removeClass('active');
         $('.notification_bar').addClass('active');
-        setTimeout(function(){
-            submit_contact = true;    
-        },5000);
+        setTimeout(function () {
+            submit_contact = true;
+        }, 5000);
     }
 });
 
@@ -72,6 +72,7 @@ function reveal() {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
         var elementVisible = 50;
+        var scrollPosition = window.scrollY;
         // console.log(event);
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
@@ -82,6 +83,13 @@ function reveal() {
                 }
             }
         }
+
+        // Check if the window is at the top of the document
+        if (scrollPosition >= 300) {
+            $('.scroll-top').removeClass("scroll_hide");
+        } else {
+            $('.scroll-top').addClass("scroll_hide");
+        }
         //  else {
         //     reveals[i].classList.remove("active");
         // }
@@ -90,18 +98,18 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 reveal();
 
-function homepage(){
+function homepage() {
     function getScreenWidth() {
         return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     }
 
-    
+
     function updateImage() {
-        if(document.getElementById('slider_img_1') !== null){
+        if (document.getElementById('slider_img_1') !== null) {
             var screenWidth = getScreenWidth();
             var imageElement1 = document.getElementById('slider_img_1');
             var imageElement2 = document.getElementById('slider_img_2');
-    
+
             if (screenWidth < 765) {
                 imageElement1.src = 'images/slider/Mobile_slider_1.png';
                 imageElement2.src = 'images/slider/Mobile_slider_2.png';
@@ -115,7 +123,7 @@ function homepage(){
     window.addEventListener('resize', updateImage);
 }
 
-function servixcesPages(){
+function servixcesPages() {
     // console.log(window.location.hash);
     let content_count = window.location.hash.replace("#", "");
     content_count--;
@@ -145,8 +153,18 @@ function servixcesPages(){
             $('.drop-down').addClass('hide');
             setTimeout(() => {
                 $('.drop-down').removeClass('hide');
-                scroll(0,0);
+                scroll(0, 0);
             }, 500);
         }
     });
 }
+
+$('.scroll-top').on('click', function () {
+    setTimeout(function () {
+        scroll(0, 0);
+    }, 500);
+    $('.scroll_line').html("wee !");
+    setTimeout(function () {
+        $('.scroll_line').html("Scroll Top");
+    }, 2000);
+});

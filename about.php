@@ -4,17 +4,6 @@
         border-top: 1px solid #413c9640;
         margin-top: 45px;
     }
-
-    .loading_screen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        opacity: 50%;
-        z-index: 999;
-    }
 </style>
 
 <div class="loading_screen d-none">

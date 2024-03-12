@@ -82,45 +82,45 @@
                     <div class="treatments_slider">
 
                         <div class="mt-3 mt-md-3 mt-lg-0 p-3">
-                            <div class="services_container bg-white ">
+                            <a href="invisalign.php" class="services_container bg-white">
                                 <img src="images/home/tooth_aligners.jpeg" class="object-cover" alt="">
                                 <p class="services_content">Invisalign Aligners</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="mt-3 mt-md-3 mt-lg-0 p-3">
-                            <div class="services_container bg-white ">
+                            <a href="braces.php" class="services_container bg-white">
                                 <img src="images/home/braces.jpg" class="object-cover" alt="">
                                 <p class="services_content">Braces</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="mt-3 mt-md-3 mt-lg-0 p-3">
-                            <div class="services_container bg-white ">
+                            <a href="smile-makeover.php" class="services_container bg-white">
                                 <img src="images/home/smile-makeover.png" class="object-cover" alt="">
                                 <p class="services_content">Smile Make Over</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="mt-3 mt-md-3 mt-lg-0 p-3">
-                            <div class="services_container bg-white ">
+                            <a href="implants.php" class="services_container bg-white">
                                 <img src="images/home/dental-implants.png" class="object-cover" alt="">
                                 <p class="services_content">Dental Implants</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="mt-3 mt-md-3 mt-lg-0 p-3">
-                            <div class="services_container bg-white ">
+                            <a href="crown_bridges.php" class="services_container bg-white">
                                 <img src="images/home/dental-crown-bridges.png" class="object-cover" alt="">
                                 <p class="services_content">Zirconia / Emax Crowns</p>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="mt-3 mt-md-3 mt-lg-0 p-3">
-                            <div class="services_container bg-white ">
+                            <a href="root-canal.php" class="services_container bg-white">
                                 <img src="images/home/root-canal-treatment.png" class="object-cover" alt="">
                                 <p class="services_content">Root Canal</p>
-                            </div>
+                            </a>
                         </div>
 
                     </div>

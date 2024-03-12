@@ -1,4 +1,9 @@
 </main>
+<div class="scroll-top">
+    <i class="arrow"></i>
+    <img src="images/icons/tooth-solid.png" class="tooth_icon" alt="">
+    <p class="scroll_line">Scroll Top</p>
+</div>
     <footer>
         <div class="mx-3 mx-md-4 mx-lg-5">
             <div class="row py-5">
@@ -13,10 +18,10 @@
                             <p class="heading h4 mb-4">Services</p>
                             <ul class="para footer_links h5 text-secondary">
                                 <li><a href="Invisalign.php">Invisalign</a></li>
-                                <li><a href="#">Braces</a></li>
-                                <li><a href="#">Crowns &amp; Bridges</a></li>
-                                <li><a href="#">Implants</a></li>
-                                <li><a href="#">Dentures</a></li>
+                                <li><a href="braces.php">Braces</a></li>
+                                <li><a href="crown_bridges.php">Crowns &amp; Bridges</a></li>
+                                <li><a href="implants.php">Implants</a></li>
+                                <li><a href="dentures.php">Dentures</a></li>
                             </ul>
                         </div>
                     </div>
@@ -26,7 +31,7 @@
                         <p class="heading h4 mb-4">Contact Address</p>
                         <p class="para h5 text-secondary"> <span class="">550/136</span> Hallmark Towers, <span
                                 class="">1</span>st Floor, Above Wangs Kitchen, TT Krishnamachari Rd,
-                            Sri Ram Nagar South Street , Alwarpet, Chennai, Tamil Nadu <span
+                            Sri Ram Nagar South Street , Alwarpet, Chennai,<br> Tamil Nadu <span
                                 class="">600018</span></p>
                         <div class="d-flex align-items-center justify-content-start mt-3">
                             <span class="mr-4 para h5 text-secondary">Follow Us: </span>
